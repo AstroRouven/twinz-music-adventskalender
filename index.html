@@ -1,41 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Twinz Music Adventskalender</title>
-
-    <style>
-        body {
-            background: #850000;
-            color: white;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px 20px;
-        }
-
-        h1 {
-            color: gold;
-            font-size: 36px;
-        }
-
-        p {
-            font-size: 20px;
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#800000">
+<title>Twinz Music – Musik-Adventskalender</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:#790000}body{display:flex;justify-content:center}.page{position:relative;width:min(100%,720px);line-height:0;overflow:hidden}.design{display:block;width:100%;height:auto}.spotify{position:absolute;left:7.8%;top:75.8%;width:26.4%;height:19.8%;z-index:2;border-radius:8px;cursor:pointer}.spotify:focus-visible{outline:4px solid #fff;outline-offset:3px}.snow{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:3}.flake{position:absolute;top:-3%;left:var(--x);width:var(--s);height:var(--s);background:#fff;border-radius:50%;opacity:var(--o);filter:blur(var(--b));animation:fall var(--d) linear var(--delay) infinite;will-change:transform}@keyframes fall{from{transform:translate3d(0,-20px,0)}to{transform:translate3d(var(--drift),2200px,0)}}@media(prefers-reduced-motion:reduce){.flake{animation:none;display:none}}
+</style>
 </head>
-
 <body>
-
-    <h1>🎄 TWINS MUSIC 🎄</h1>
-
-    <h2>Musik-Adventskalender 2026</h2>
-
-    <p>Na, na, na! Noch nicht auspacken! 🎅</p>
-
-    <p>Ab dem 1. Dezember gibt es jeden Tag einen neuen Song!</p>
-
-    <p>✨ TESTVERSION 2 ✨</p>
-
+<main class="page">
+<img class="design" src="design.png" alt="Twinz Music Musik-Adventskalender: Schokolade für die Ohren. Na, na, na! Wer wird denn da schon vor dem 1. Dezember auspacken wollen? 26 Tage, 26 Songs, jede Menge Überraschungen. Du möchtest schon jetzt etwas Weihnachtsmusik naschen?">
+<a class="spotify" href="https://open.spotify.com/playlist/5laQ8Xs4IQW3FDpiucxB6w" target="_blank" rel="noopener noreferrer" aria-label="Adventskalender-Playlist auf Spotify öffnen"></a>
+<div class="snow" aria-hidden="true" id="snow"></div>
+</main>
+<script>
+const snow=document.getElementById('snow');
+if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+  for(let i=0;i<65;i++){
+    const f=document.createElement('span');f.className='flake';
+    f.style.setProperty('--x',Math.random()*100+'%');
+    f.style.setProperty('--s',(1+Math.random()*4)+'px');
+    f.style.setProperty('--o',(0.25+Math.random()*0.65).toFixed(2));
+    f.style.setProperty('--b',(Math.random()*1.2).toFixed(1)+'px');
+    f.style.setProperty('--d',(9+Math.random()*14).toFixed(1)+'s');
+    f.style.setProperty('--delay',(-Math.random()*23).toFixed(1)+'s');
+    f.style.setProperty('--drift',(-65+Math.random()*130).toFixed(0)+'px');
+    snow.appendChild(f);
+  }
+}
+</script>
 </body>
 </html>
