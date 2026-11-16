@@ -1,0 +1,20 @@
+[
+  {
+    "tag": 1,
+    "titel": "All I Want Is a Christmas Song",
+    "spotify": "https://open.spotify.com/album/7DO0UA8wbWM0VlL9tXXIqV?si=eRJ572fRQ7uUTWUSsFnzSw",
+    "youtube": "https://www.youtube.com/watch?v=KD0KlXlk1vg&list=OLAK5uy_kEfPPh6s5qroUgRywX2sGdf9Evyo8UgAk"
+  },
+  {
+    "tag": 2,
+    "titel": "Schnee",
+    "spotify": "https://open.spotify.com/album/2jhnP0FyjPbpfPLiRgZDuv?si=tAGC5g1TTjaab6hvqRLMww",
+    "youtube": "https://www.youtube.com/watch?v=nCSDFh0ClfY&list=OLAK5uy_l5PNKSW2PBNY8U6nfZb31UYkCbfvjWJTY"
+  },
+  {
+    "tag": 3,
+    "titel": "Christmas for You",
+    "spotify": "https://open.spotify.com/album/6gAtSqaf7cTNoHTNYsVpbg?si=7V5EKOn7TyaJzVTYCz7Wrw",
+    "youtube": "https://www.youtube.com/watch?v=GE6t40jmdDM&list=OLAK5uy_khIJnUNn_8aYbY7xv-hg6OiP33_DCQ_i0"
+  }
+]
